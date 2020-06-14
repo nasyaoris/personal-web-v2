@@ -4,10 +4,8 @@ export const AppContainer = styled.div`
     font-family: "Montserrat";
 
     .container {
-        margin-top: 4rem;
-        margin-left: auto;
-        width: calc(100vw - 5rem);
-        padding: 1.5rem;
+        width: calc(100vw - 1rem);
+        margin-top: 5vh;
     }
 
     @media screen and (max-width: 992px) {

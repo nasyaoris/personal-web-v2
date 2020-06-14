@@ -7,34 +7,53 @@ import Typing from "react-typing-animation";
 
 export const HomePage: React.FC = () => {
     return (
-        <HomePagaContainer>
+        <HomePagaContainer className="container">
             <NavbarComponent />
-            <div className="asset1">
+            {/* <div className="asset3">
+                    <img
+                        src={swirl2}
+                        style={{ width: "20vw", height: "40vh" }}
+                    />
+                </div> */}
+            {/* <div className="asset1">
                 <img src={swirl1} style={{ width: "20vw", height: "30vh" }} />
-            </div>
-            <div className="home">
-                <div className="content">
-                    <h1>Hello! I'm Nasya</h1>
-                    <Typing speed={70}>
-                        <p>
-                            I'm a,
-                            <Typing.Delay ms={2000} />
-                            <span> future Software Engineer.</span>
-                            <Typing.Backspace count={19} />
-                            <Typing.Delay ms={2000} />
-                            <span> Developer.</span>
-                            <Typing.Backspace count={20} />
-                            <Typing.Delay ms={2000} />
-                            <span> going to make difference.</span>
-                            <Typing.Backspace count={25} />
-                            <Typing.Delay ms={2000} />
-                            <span> a future Software Engineer.</span>
-                        </p>
-                    </Typing>
+            </div> */}
+            <div className="home-container">
+                <div className="home">
+                    <div className="content">
+                        <h1>Hello! I'm Nasya</h1>
+                        <Typing speed={70}>
+                            <p>
+                                I'm a,
+                                <Typing.Delay ms={2000} />
+                                <span> future Software Engineer.</span>
+                                <Typing.Backspace count={19} />
+                                <Typing.Delay ms={2000} />
+                                <span> Developer.</span>
+                                <Typing.Backspace count={20} />
+                                <Typing.Delay ms={2000} />
+                                <span> going to make difference.</span>
+                                <Typing.Backspace count={25} />
+                                <Typing.Delay ms={2000} />
+                                <span> a future Software Engineer.</span>
+                            </p>
+                        </Typing>
+                    </div>
                 </div>
             </div>
             <div className="asset2">
-                <img src={swirl2} style={{ width: "20vw", height: "40vh" }} />
+                <div className="img1">
+                    <img
+                        src={swirl1}
+                        style={{ width: "20vw", height: "30vh" }}
+                    />
+                </div>
+                <div className="img2">
+                    <img
+                        src={swirl1}
+                        style={{ width: "20vw", height: "30vh" }}
+                    />
+                </div>
             </div>
         </HomePagaContainer>
     );

@@ -1,14 +1,20 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const swrilAnimation = keyframes`
+ 0% { transform: rotate(45deg);}
+ 30% { transform: rotate(90deg); height: 30vw;}
+ 40% { transform: rotate(45deg);}
+ 100% { transform: rotate(90deg); height: 30vw; }
+`;
 
 export const NavbarContainer = styled.div`
-    position: fixed;
     display: flex;
     align-items: center;
     top: 0;
     background-color: white;
     width: 100vw;
     height: 4rem;
-    z-index: 1;
+
     button {
         font-family: "Nanum Myeongjo";
         font-size: 20px;
@@ -32,9 +38,24 @@ export const NavbarContainer = styled.div`
         }
     } */
 
+    .asset3 {
+        z-index: 0;
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        img {
+            transform: rotate(45deg);
+            animation-name: ${swrilAnimation};
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+    }
+
     .container {
         display: flex;
         justify-content: flex-end;
+        /* position: relative;
+        z-index: 1; */
     }
 
     @media only screen and (max-width: 600px) {

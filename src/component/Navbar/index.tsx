@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 import { NavbarContainer } from "./style";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import swirl2 from "../../static/1437380.svg";
+import swirl1 from "../../static/42675.svg";
 
 const NavbarComponent: React.FC = () => {
     return (
@@ -67,6 +69,10 @@ const NavbarComponent: React.FC = () => {
                     </div>
                 </Navbar.Collapse>
             </Navbar>
+            <div className="asset3">
+                <img src={swirl2} style={{ width: "20vw", height: "40vh" }} />
+                {/* <img src={swirl1} style={{ width: "20vw", height: "30vh" }} /> */}
+            </div>
         </NavbarContainer>
     );
 };
